@@ -1,0 +1,439 @@
+html, body {
+    overflow-x: hidden;
+}
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 2rem;
+    box-shadow: 0 8px 8px rgba(0,0,0,0.1);
+
+}
+
+.section {
+    padding: 4rem 0;
+    text-align: center;
+}
+
+h1, h2, h3 {
+    color: #007BFF;
+}
+
+/* Barra de navegação */
+.navbar {
+    background-color: #000000;
+    color: white;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    
+}
+
+.navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-left: 1px;
+    
+}
+
+
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    margin: 0;
+    padding: 0;
+    margin-left: 40%;
+    
+}
+
+.navbar .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.navbar .nav-links a:hover {
+    color: #d21717;
+}
+
+/* Botão de Contato na Barra de Navegação */
+.contact-btn {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    margin-right: 50px;
+}
+
+.contact-btn:hover {
+    background-color: white;
+    color: #007BFF;
+}
+
+/* Seção de apresentação */
+.hero {
+    background-color: #000205;
+    color: white;
+    padding: 6rem 0;
+    text-align: end;
+    height: 600px;
+    margin-top: 20px;
+
+    
+}
+
+.hero-content-wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 0 2rem;
+    text-align: end;
+}
+
+.hero-content {
+    text-align: justify;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+    color: white;
+    margin-top: 100px;
+    margin-right: 10px;
+    text-align: center;
+}
+.hero-content p{
+    text-indent: 10px;
+    text-align: center;
+}
+.caixa{
+    background-color: #007BFF;
+    top: 1000px;
+    position: absolute;
+
+}
+.profile-pic {
+    border: 5px solid rgb(0, 0, 0);
+    border-radius: 50%;
+    overflow: hidden;
+    width: 300px;
+    height: 300px;
+    flex-shrink: 0;
+}
+
+.profile-pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Estilos para a seção de Habilidades com descrição */
+.skills-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    list-style: none;
+    padding: 0;
+}
+
+.skill-item {
+    position: relative;
+    background-color: #ddd;
+    padding: 1rem 2rem;
+    border-radius: 20px;
+    font-weight: bold;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.skill-item:hover {
+    transform: translateY(-5px);
+}
+
+.skill-item .skill-name {
+    display: block;
+    font-size: 1.2rem;
+    color: #333;
+    transition: color 0.3s;
+}
+
+.skill-item:hover .skill-name {
+    color: #007BFF;
+}
+
+.skill-description {
+    position: absolute;
+    bottom: calc(100% + 10px);
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: white;
+    padding: 0.75rem 1rem;
+    border-radius: 8px;
+    white-space: nowrap;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.skill-item:hover .skill-description {
+    opacity: 1;
+    visibility: visible;
+}
+
+.skill-description::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 8px solid #333;
+}
+
+/* Projetos */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.project-card {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    
+    
+}
+    
+    
+.project-card-Escola {
+    padding: 2rem;
+    border-radius: 8px;
+s    transition: transform 0.3s;
+}
+
+.project-card-Escola p {
+    text-align: center;
+    letter-spacing: 1px;
+    margin: -2px; 
+}
+.project-card-Escola h2 {
+    text-align: center;
+    margin: 0;
+
+}
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-card h3 {
+    margin-top: 0;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #007BFF;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 1rem;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+#feedbackForm {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Botão flutuante de download */
+.floating-btn {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    background-color: #007BFF;
+    color: white;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: transform 0.3s;
+    z-index: 100;
+}
+
+.floating-btn:hover {
+    transform: scale(1.1);
+}
+
+/* Estilo do Card de Contato */
+.contact-card-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3000;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.contact-card-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.contact-card {
+    background-color: #3b3a3a;
+    padding: 2rem;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+    position: relative;
+    animation: slide-in 0.5s ease-out;
+}
+
+.close-card-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 2rem;
+    color: #efe5e5;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.contact-link {
+    display: block;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    background-color: #101010;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #ffffff;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.contact-link i {
+    margin-right: 10px;
+    font-size: 1.2rem;
+}
+
+.contact-link:hover {
+    background-color: #007BFF;
+    color: white;
+}
+
+.card-text {
+    margin-top: 1.5rem;
+    color: #e7e7e7;
+}
+
+/* Animação para o card */
+@keyframes slide-in {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Rodapé */
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .hero-content-wrapper {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .hero-content {
+        text-align: center;
+    }
+
+    .navbar .nav-links {
+        display: none;
+    }
+}
+
+@media (min-width: 769px) {
+    .contact-btn {
+        margin-left: 1rem;
+    }
+}
+
