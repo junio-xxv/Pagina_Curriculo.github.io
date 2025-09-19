@@ -6,7 +6,7 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #121212;
     color: #333;
 }
 
@@ -15,6 +15,7 @@ body {
     margin: 0 auto;
     padding: 2rem;
     box-shadow: 0 8px 8px rgba(0,0,0,0.1);
+   
 
 }
 
@@ -24,7 +25,10 @@ body {
 }
 
 h1, h2, h3 {
-    color: #007BFF;
+    color: #fafafa;
+}
+p {
+    color: #8f7c7c;
 }
 
 /* Barra de navegação */
@@ -92,8 +96,8 @@ h1, h2, h3 {
 
 /* Seção de apresentação */
 .hero {
-    background-color: #000205;
-    color: white;
+    background-color: #000000;
+    color: rgb(248, 244, 244);
     padding: 6rem 0;
     text-align: end;
     height: 600px;
@@ -163,7 +167,7 @@ h1, h2, h3 {
 
 .skill-item {
     position: relative;
-    background-color: #ddd;
+    background-color: #2b2929;
     padding: 1rem 2rem;
     border-radius: 20px;
     font-weight: bold;
@@ -179,7 +183,7 @@ h1, h2, h3 {
 .skill-item .skill-name {
     display: block;
     font-size: 1.2rem;
-    color: #333;
+    color: #ffffff;
     transition: color 0.3s;
 }
 
@@ -231,7 +235,7 @@ h1, h2, h3 {
 }
 
 .project-card {
-    background-color: white;
+    background-color: rgb(43, 35, 35);
     padding: 2rem;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
@@ -243,7 +247,7 @@ h1, h2, h3 {
 .project-card-Escola {
     padding: 2rem;
     border-radius: 8px;
-s    transition: transform 0.3s;
+    transition: transform 0.3s;
 }
 
 .project-card-Escola p {
@@ -266,8 +270,8 @@ s    transition: transform 0.3s;
 
 .btn {
     display: inline-block;
-    background-color: #007BFF;
-    color: white;
+    background-color: #adb2b8;
+    color: rgb(2, 0, 0);
     padding: 0.75rem 1.5rem;
     border-radius: 5px;
     text-decoration: none;
@@ -276,7 +280,8 @@ s    transition: transform 0.3s;
 }
 
 .btn:hover {
-    background-color: #0056b3;
+    background-color: #0e0e0e;
+    color: #e7e7e7;
 }
 
 #feedbackForm {
@@ -301,6 +306,8 @@ s    transition: transform 0.3s;
     border: 1px solid #ccc;
     border-radius: 5px;
     box-sizing: border-box;
+    background-color: #464849;
+    color: #ccc;
 }
 
 /* Botão flutuante de download */

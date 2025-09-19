@@ -1,4 +1,4 @@
-alert('Tenha um PDF do meu curriculo atravez do icone')
+alert("Baixe meu currículo completo: 📄");
 
 
 document.getElementById('feedbackForm').addEventListener('submit', function(event) {
