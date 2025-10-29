@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
 
 :root {
-    --primary-bg: #b4bdca; /* Fundo principal claro */
+    --primary-bg: #eceff3; /* Fundo principal claro */
     --secondary-bg: #ffffff; /* Fundo de cards/elementos */
     --navbar-bg: #000000; /* Fundo da barra de navegação escura */
     --text-color: #333333; /* Cor principal do texto */
@@ -41,10 +41,12 @@ body {
 /* foto */
 
 .foto-p img{
-    width: 500px;
-    height: 500px;
-    border: #388E3C solid 5px;
+    width: 400px;
+    height: 400px;
+    border: var(--primary-bg) solid 5px;
     border-radius: 15px;
+
+    background-repeat: no-repeat;
     
 
 }
