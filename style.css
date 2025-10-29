@@ -2,17 +2,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
 
 :root {
-    --primary-bg: #F0F2F5; /* Fundo principal claro */
-    --secondary-bg: #FFFFFF; /* Fundo de cards/elementos */
-    --navbar-bg: #2B3A55; /* Fundo da barra de navegação escura */
+    --primary-bg: #b4bdca; /* Fundo principal claro */
+    --secondary-bg: #ffffff; /* Fundo de cards/elementos */
+    --navbar-bg: #000000; /* Fundo da barra de navegação escura */
     --text-color: #333333; /* Cor principal do texto */
     --heading-color: #1A202C; /* Cor dos títulos */
-    --accent-color: #4CAF50; /* Cor de destaque (verde) */
+    --accent-color: #040000; /* Cor de destaque (verde) */
     --accent-dark: #388E3C; /* Cor de destaque mais escura */
     --border-color: #E0E0E0; /* Cor de borda suave */
     --shadow-light: rgba(0, 0, 0, 0.08); /* Sombra leve */
-    --shadow-medium: rgba(0, 0, 0, 0.15); /* Sombra média */
-    --gradient-hero: linear-gradient(135deg, #2B3A55 0%, #4a6fa5 100%); /* Gradiente para o hero */
+    --shadow-medium: rgba(0, 0, 0, 0.6); /* Sombra média */
+    --gradient-hero: black /* Gradiente para o hero */
 }
 
 /* Reset básico */
@@ -35,8 +35,25 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
+    text-align: center;
+
+}
+/* foto */
+
+.foto-p img{
+    width: 500px;
+    height: 500px;
+    border: #388E3C solid 5px;
+    border-radius: 15px;
+    
+
 }
 
+
+
+
+
+/* foto */
 /* Navbar */
 .navbar {
     background-color: var(--navbar-bg);
@@ -97,6 +114,9 @@ body {
     position: relative;
     overflow: hidden; /* Garante que elementos de fundo não transbordem */
 }
+h2 {
+    text-align: center;
+}
 
 /* Adiciona um padrão geométrico sutil ao fundo do Hero */
 .hero::before {
@@ -121,7 +141,7 @@ body {
 
 .hero-content {
     max-width: 800px;
-    text-align: left;
+    text-align: center; /* <-- MODIFICADO */
     background-color: rgba(0, 0, 0, 0.2); /* Fundo semi-transparente para o texto */
     padding: 40px;
     border-radius: 15px;
@@ -144,6 +164,7 @@ body {
 .section {
     padding: 60px 0;
     text-align: center;
+    align-items: center;
 }
 
 .section h2 {
@@ -151,9 +172,12 @@ body {
     color: var(--heading-color);
     margin-bottom: 40px;
     position: relative;
-    display: inline-block;
+    display: block; /* <-- MODIFICADO */
+    text-align: center;
 }
-
+.alinhar{
+    text-align: center;
+}
 .section h2::after {
     content: '';
     display: block;
@@ -162,6 +186,7 @@ body {
     background-color: var(--accent-color);
     margin: 10px auto 0;
     border-radius: 2px;
+    text-align: center;
 }
 
 /* Cards em geral (para Habilidades, Projetos, etc.) */
@@ -172,11 +197,12 @@ body {
     padding: 30px;
     text-align: left;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: solid black 3px;
 }
 
 .project-card:hover, .project-card-Escola:hover, .skill-item:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 25px var(--shadow-medium);
+    box-shadow: 0 10px 30px var(--shadow-medium);
 }
 
 /* Estilo para a seção "Sobre Mim" e "Formação Acadêmica" */
@@ -254,6 +280,7 @@ body {
     font-size: 1.6rem;
     color: var(--heading-color);
     margin-bottom: 10px;
+    text-align: center; /* <-- ADICIONADO */
 }
 
 .project-card p {
