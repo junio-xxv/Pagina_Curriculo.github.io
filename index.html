@@ -5,16 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <title>Meu Portfólio</title> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css"> 
 </head> 
 <body> 
 
      <nav class="navbar"> 
-        <!-- <ul class="nav-links"> 
-            <li><a href="#sobre">Sobre Mim</a></li> 
-            <li><a href="#projetos">Projetos</a></li> 
-            <li><a href="#habilidades">Habilidades</a></li> 
-        </ul>   -->
+        <ul class="nav-links">
+            <li><a href="#sobre">Sobre Mim</a></li>
+            <li><a href="#habilidades">Habilidades</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+        </ul>
         <button class="contact-btn" onclick="openContactCard()"> 
             <i class="fas fa-id-card"></i> Contato
         </button> 
@@ -22,16 +23,15 @@
 
     <header class="hero"> 
         <div class="hero-content-wrapper"> 
-            <div class="hero-content"> 
-                <h1 style="opacity: 1.0;">Olá, meu nome é Alex Junio</h1> 
-                <p style="opacity: 1.0;">Sou um profissional de TI com um interesse genuíno por tecnologia e programação. Acredito que o aprendizado é uma jornada contínua e, por isso, estou sempre buscando novas habilidades e conhecimentos. Este portfólio é um reflexo do que estou construindo e um registro das minhas principais experiências e projetos.</p> 
+            <div class="hero-content" data-aos="fade-right"> 
+                <h1>Olá, meu nome é Alex Junio</h1> 
+                <p>Sou um profissional de TI com um interesse genuíno por tecnologia e programação. Acredito que o aprendizado é uma jornada contínua e, por isso, estou sempre buscando novas habilidades e conhecimentos. Este portfólio é um reflexo do que estou construindo e um registro das minhas principais experiências e projetos.</p> 
             </div> 
         </div> 
-
     </header> 
 
     <main> 
-        <section id="sobre" class="section"> 
+        <section id="sobre" class="section" data-aos="fade-up"> 
             <div class="container"> 
                 <h2>Sobre Mim</h2> 
 Sou um profissional de TI apaixonado pela área e com uma base sólida em suporte técnico e infraestrutura. Atualmente, trabalho no setor de TI da Centro Universitário Una, onde sou responsável pelo atendimento e suporte a colaboradores e alunos. Nessa função, aprimorei minhas habilidades em manutenção de notebooks e PCs, aprendendo a resolver problemas de forma eficiente, do básico ao intermediário.<br><br>
@@ -40,9 +40,10 @@ Minha jornada na tecnologia vai além do suporte. Estou em constante aprofundame
 
 Além das minhas habilidades técnicas, sou uma pessoa que equilibra o profissionalismo com a criatividade. Sou bastante reservado, mas também tenho um lado descontraído e brincalhão que se manifesta no trabalho em equipe. No meu tempo livre, busco inspiração na leitura, em longas caminhadas e no contato com a natureza. Também dedico tempo à criação de projetos de design, uma paixão que me ajuda a desenvolver um olhar estético e a pensar de forma inovadora.<br><br>
 
-Busco unir minhas habilidades técnicas com meu espírito curioso para criar soluções inovadoras e eficientes. Estou sempre aberto a novas oportunidades e desafios que me permitam crescer e contribuir com minha experiência e criatividade.            </div> 
+Busco unir minhas habilidades técnicas com meu espírito curioso para criar soluções inovadoras e eficientes. Estou sempre aberto a novas oportunidades e desafios que me permitam crescer e contribuir com minha experiência e criatividade.
+            </div> 
         </section> 
-        <div class="container"> 
+        <div class="container" data-aos="fade-up"> 
             <div class="projects-grid"> 
                 <div class="project-card-Escola"> 
                     <h1 style="text-align: center;">Formação Acadêmica</h1> 
@@ -55,103 +56,109 @@ Busco unir minhas habilidades técnicas com meu espírito curioso para criar sol
                 </div> 
             </div> 
         </div> 
-        <section id="habilidades" class="section"> 
+        <section id="habilidades" class="section" data-aos="fade-up"> 
             <div class="container"> 
                 <h2>Minhas Habilidades</h2> 
                 <ul class="skills-list"> 
-                    <li class="skill-item"> 
+                    <li class="skill-item" data-aos="fade-up" data-aos-delay="100"> 
                         <span class="skill-name">HTML</span> 
                         <span class="skill-description">Estruturação de páginas web, uso de tags semânticas e acessibilidade.</span> 
                     </li> 
-                    <li class="skill-item"> 
+                    <li class="skill-item" data-aos="fade-up" data-aos-delay="200"> 
                         <span class="skill-name">CSS</span> 
                         <span class="skill-description">Estilização de layouts, design responsivo, animações e pré-processadores.</span> 
                     </li> 
-                    <li class="skill-item"> 
+                    <li class="skill-item" data-aos="fade-up" data-aos-delay="300"> 
                         <span class="skill-name">JavaScript</span> 
                         <span class="skill-description">Lógica de programação, manipulação do DOM e desenvolvimento front-end.</span> 
                     </li> 
-                    <li class="skill-item"> 
+                    <li class="skill-item" data-aos="fade-up" data-aos-delay="400"> 
                         <span class="skill-name">Linux</span> 
                         <span class="skill-description">Conhecimento básico e avançado, manipulação de arquivos, gerenciamento de sistemas em diversas distribuições.</span> 
                     </li> 
-                    <li class="skill-item"> 
+                    <li class="skill-item" data-aos="fade-up" data-aos-delay="500"> 
                         <span class="skill-name">GitHub</span> 
                         <span class="skill-description">Controle de versão com Git, manipulação de branches, gerenciamento de projetos e trabalho em equipe.</span> 
                     </li>  
-                    <li class="skill-item"> 
+                    <li class="skill-item" data-aos="fade-up" data-aos-delay="600"> 
                         <span class="skill-name">Suporte e Manutenção</span> 
                         <span class="skill-description">Manutenção, formatação e atendimento ao usuário.</span> 
                     </li>   
-                    <li class="skill-item"> 
+                    <li class="skill-item" data-aos="fade-up" data-aos-delay="700"> 
                         <span class="skill-name">Windows 11</span> 
                         <span class="skill-description">Administração de sistemas, automação de tarefas e resolução de problemas.</span> 
                     </li>   
-                    <li class="skill-item"> 
+                    <li class="skill-item" data-aos="fade-up" data-aos-delay="800"> 
                         <span class="skill-name">Administração</span> 
                         <span class="skill-description">Coleta de dados e manipulação de documentos.</span> 
                     </li>
-                    <li class="skill-item"> 
+                    <li class="skill-item" data-aos="fade-up" data-aos-delay="900"> 
                         <span class="skill-name">Java</span> 
                         <span class="skill-description">Conhecimento básico e intermediário.</span> 
                     </li>  
-                    <li class="skill-item"> 
+                    <li class="skill-item" data-aos="fade-up" data-aos-delay="1000"> 
                         <span class="skill-name">Banco de Dados</span> 
                         <span class="skill-description">Noções iniciais de banco de dados, Python e Java.</span> 
                     </li>   
-                    <li class="skill-item"> 
+                    <li class="skill-item" data-aos="fade-up" data-aos-delay="1100"> 
                         <span class="skill-name">Inglês</span> 
                         <span class="skill-description">Inglês instrumental para leitura e interpretação de documentação técnica.</span> 
                     </li>   
-                    <li class="skill-item"> 
+                    <li class="skill-item" data-aos="fade-up" data-aos-delay="1200"> 
                         <span class="skill-name">Comunicação</span> 
                         <span class="skill-description">Habilidades em trabalho em equipe e boa comunicação interpessoal.</span> 
                     </li> 
                 </ul> 
             </div> 
         </section> 
-        <section id="projetos" class="section"> 
+        <section id="projetos" class="section" data-aos="fade-up"> 
             <div class="container"> 
                 <h2>Projetos</h2> 
                 <div class="projects-grid"> 
-                    <div class="project-card"> 
+                    <div class="project-card" data-aos="fade-up" data-aos-delay="100"> 
                         <h3>Diário de Psicologia</h3> 
                         <p>Plataforma para pacientes de psicologia, onde eles podem manter um diário, e o terapeuta tem acesso às anotações. O sistema conta com login e senhas seguras. Desenvolvido com **HTML, CSS, JavaScript e Python**.</p> 
                         <p>HTML, CSS, JS e Python</p> 
                         <a href="https://github.com/junio-xxv/psicologia" class="btn" target="_blank">Ver Projeto</a> 
                     </div> 
-                    <div class="project-card"> 
+                    <div class="project-card" data-aos="fade-up" data-aos-delay="200"> 
                         <h3>Gerenciador de Filas</h3> 
                         <p>Sistema de gerenciamento de filas voltado para supermercados e padarias, onde o usuário insere seu nome e é chamado quando for sua vez. Desenvolvido com **HTML, CSS, JS, Python e bibliotecas**.</p> 
                         <a href="https://github.com/junio-xxv/padaria" class="btn" target="_blank">Ver Projeto</a> 
                     </div> 
-                    <div class="project-card"> 
+                    <div class="project-card" data-aos="fade-up" data-aos-delay="300"> 
                         <h3>Portfólio Pessoal</h3> 
                         <p>Esta página web foi criada para detalhar meu currículo, projetos e informações de contato.</p> 
                         <a href="https://github.com/junio-xxv/Pagina_Alex" class="btn" target="_blank">Ver Projeto</a> 
                     </div> 
-                    <div class="project-card"> 
+                    <div class="project-card" data-aos="fade-up" data-aos-delay="400"> 
                         <h3>Aprimoramento de Segurança</h3> 
                         <p>Projeto que utiliza **Python** para automatizar e otimizar rotinas de segurança no sistema operacional **Windows**.</p> 
                     </div> 
                 </div> 
             </div> 
         </section> 
-        <section id="feedback" class="section"> 
+        <section id="feedback" class="section" data-aos="fade-up"> 
             <div class="container"> 
                 <h2>Deixe seu Feedback</h2> 
-                <form id="feedbackForm"> 
+                
+                <form id="feedbackForm" action="#" method="POST"> 
                     <div class="form-group"> 
                         <label for="name">Seu Nome:</label> 
-                        <input type="text" id="name" required> 
+                        <input type="text" id="name" name="name" required> 
+                    </div> 
+                    <div class="form-group"> 
+                        <label for="email">Seu Email:</label> 
+                        <input type="email" id="email" name="email" required> 
                     </div> 
                     <div class="form-group"> 
                         <label for="message">Mensagem:</label> 
-                        <textarea id="message" rows="5" required></textarea> 
+                        <textarea id="message" name="message" rows="5" required></textarea> 
                     </div> 
                     <button type="submit" class="btn">Enviar Feedback</button> 
                     <div id="messageStatus"></div> 
                 </form> 
+
             </div> 
         </section> 
     </main> 
@@ -188,6 +195,7 @@ Busco unir minhas habilidades técnicas com meu espírito curioso para criar sol
         </div> 
     </footer> 
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="script.js"></script> 
 </body> 
 </html>
