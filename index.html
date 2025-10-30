@@ -11,20 +11,22 @@
 <body> 
 
      <nav class="navbar"> 
-        <ul class="nav-links">
-            <li><a href="#sobre">Sobre Mim</a></li>
-            <li><a href="#habilidades">Habilidades</a></li>
-            <li><a href="#projetos">Projetos</a></li>
-        </ul>
-        <button class="contact-btn" onclick="openContactCard()"> 
-            <i class="fas fa-id-card"></i> Contato
-        </button> 
+<nav class="navbar"> 
+    <button id="dark-mode-toggle" class="mode-toggle-btn"> 
+        <i class="fas fa-moon"></i> 
+    </button> 
+    <ul class="nav-links">
+        <li><a href="#sobre">Sobre Mim</a></li>
+        <li><a href="#habilidades">Habilidades</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+    </ul>
+    </nav>
     </nav> 
 
     <header class="hero"> 
         <div class="hero-content-wrapper"> 
             <div class="hero-content" data-aos="fade-right"> 
-                <div class="foto-p"><img src="" alt=""></div>
+                <div class="foto-p"><img src='' alt=""></div>
                 <h1>Olá, meu nome é <br> Alex Junio</h1> 
                 <p>Ola o objetivo dessa pagina e mostra minhas abilidades.</p> 
             </div> 
@@ -141,6 +143,14 @@ Busco unir minhas habilidades técnicas com meu espírito curioso para criar sol
                         <h3>Aprimoramento de Segurança</h3> 
                         <p>Projeto que utiliza **Python** para automatizar e otimizar rotinas de segurança no sistema operacional **Windows**.</p> 
                     </div> 
+                    <div class="project-card" data-aos="fade-up" data-aos-delay="400"> 
+                        <h3>Aprimoramento de Logica</h3> 
+                        <p>Utilizando Python e SQl para aprimora e apefeisoar a logica na programação!</p> 
+                    </div> 
+                    <div class="project-card" data-aos="fade-up" data-aos-delay="400"> 
+                        <h3>Teste de Logicas</h3> 
+                        <p>Pratica de SQL e Python Atraves de jogos e aplicativo</p> 
+                    </div> 
                 </div> 
             </div> 
         </section> 
@@ -203,5 +213,6 @@ Busco unir minhas habilidades técnicas com meu espírito curioso para criar sol
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="script.js"></script> 
+    <script src="modo-dark.js"></script>
 </body> 
 </html>

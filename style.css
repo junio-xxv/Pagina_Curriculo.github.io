@@ -14,6 +14,27 @@
     --shadow-medium: rgba(0, 0, 0, 0.6); /* Sombra média */
     --gradient-hero: black /* Gradiente para o hero */
 }
+/* B. ADICIONE A REDEFINIÇÃO DAS VARIÁVEIS PARA O MODO ESCURO */
+body.dark-mode {
+    /* CORES MODO ESCURO */
+    --primary-bg: #1A1A1A; /* Fundo principal ESCURO */
+    --secondary-bg: #2C2C2C; /* Fundo de cards/elementos ESCURO */
+    --navbar-bg: #000000; /* Pode manter preto, ou mudar para #111 */
+    --text-color: #f0f0f0; /* Texto CLARO */
+    --heading-color: #B0B0B0; /* Títulos CLAROS */
+    --accent-color: #4CAF50; /* Cor de destaque (verde claro) */
+    --accent-dark: #388E3C; /* Cor de destaque mais escura */
+    --border-color: #444444; /* Borda ESCURA */
+    --shadow-light: rgba(255, 255, 255, 0.05); /* Sombra leve CLARA */
+    --shadow-medium: rgba(0, 0, 0, 0.9); /* Sombra média ESCURA */
+    --gradient-hero: black; /* Novo gradiente */
+}
+/* A transição suave no 'body' já é boa prática */
+body {
+    /* ... seu código existente ... */
+    transition: background-color 0.4s, color 0.4s; 
+    /* ... restante do body ... */
+}
 
 /* Reset básico */
 * {
@@ -30,7 +51,7 @@ body {
     overflow-x: hidden; /* Previne scroll horizontal */
 }
 
-/* Container para centralizar conteúdo */
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -46,7 +67,7 @@ body {
     border: var(--primary-bg) solid 5px;
     border-radius: 15px;
 
-    background-repeat: no-repeat;
+    background-repeat: ;
     
 
 }
@@ -56,6 +77,8 @@ body {
 
 
 /* foto */
+
+
 /* Navbar */
 .navbar {
     background-color: var(--navbar-bg);
@@ -581,4 +604,29 @@ h2 {
         bottom: 20px;
         right: 20px;
     }
+}
+/* --- Estilo do Botão de Modo Escuro --- */
+.mode-toggle-btn {
+    background-color: transparent; /* Fundo transparente */
+    color: #FFFFFF; /* Ícone branco */
+    border: 2px solid #FFFFFF; 
+    padding: 8px 12px; 
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+    align-items: end;
+    position: fixed;
+    left: 2%;
+    border-radius: 5px;
+}
+
+
+.mode-toggle-btn:hover {
+    background-color: rgb(255, 255, 255);
+    color: #000000;
+}
+
+/* icone */
+.dark-mode .mode-toggle-btn .fa-moon:before {
+    content: "\f185"; /* Código do ícone 'fas fa-sun' */
 }
